@@ -1,6 +1,7 @@
 'use client';
 
 import type { VesselReport } from '@/types/report';
+import { translateDestination } from '@/lib/translateDestination';
 
 interface Props {
   latest: VesselReport;
@@ -27,7 +28,9 @@ export default function InfoCards({ latest }: Props) {
       </Card>
 
       <Card title="Destination" icon="⚓">
-        <p className="text-sm text-sky-300 font-semibold">{latest.Destination || '—'}</p>
+        <p className="text-sm text-sky-300 font-semibold">
+          {translateDestination(latest.Destination) || '—'}
+        </p>
       </Card>
 
       <Card title="ETA" icon="📅">

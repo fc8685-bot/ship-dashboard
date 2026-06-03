@@ -5,6 +5,7 @@ import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap } from 'react-
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import type { VesselReport } from '@/types/report';
+import { translateDestination } from '@/lib/translateDestination';
 
 // Fix Leaflet default icon paths broken by webpack
 const fixLeafletIcons = () => {
@@ -105,7 +106,7 @@ export default function ShipMap({ mapReports, latest }: Props) {
                 <span className="font-medium">Date:</span> {r.Date}
               </p>
               <p>
-                <span className="font-medium">Destination:</span> {r.Destination || '—'}
+                <span className="font-medium">Destination:</span> {translateDestination(r.Destination) || '—'}
               </p>
               <p>
                 <span className="font-medium">ETA:</span> {r.ETA || '—'}
@@ -121,7 +122,7 @@ export default function ShipMap({ mapReports, latest }: Props) {
           <div className="text-slate-800 text-sm space-y-1 min-w-[160px]">
             <p className="font-semibold text-base text-sky-700">MV Pacific Trader</p>
             <p>
-              <span className="font-medium">Destination:</span> {latest.Destination || '—'}
+              <span className="font-medium">Destination:</span> {translateDestination(latest.Destination) || '—'}
             </p>
             <p>
               <span className="font-medium">ETA:</span> {latest.ETA || '—'}
