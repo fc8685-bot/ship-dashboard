@@ -111,7 +111,7 @@ export default function Home() {
             <span className="text-4xl">⚠️</span>
             <p className="text-red-400 text-lg font-semibold">Unable to load vessel data</p>
             <p className="text-slate-500 text-sm">
-              Check that NEXT_PUBLIC_SHEET_CSV_URL is set and accessible.
+              Check that SHEET_CSV_URL is configured in the Netlify environment.
             </p>
           </div>
         )}
