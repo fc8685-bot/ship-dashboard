@@ -14,6 +14,10 @@ const PORT_MAP: Record<string, string> = {
   GUANGZHOU: '廣州',
   SHENZHEN: '深圳',
   TIANJIN: '天津',
+  XINGANG: '天津新港',
+  'XINGANG/TIANJIN/TNJ': '天津新港',
+  'XINGANG/TIANJIN': '天津新港',
+  TNJ: '天津新港',
   QINGDAO: '青島',
   NINGBO: '寧波',
   XIAMEN: '廈門',
@@ -81,7 +85,7 @@ const PORT_MAP: Record<string, string> = {
   SAIGON: '西貢',
   HANOI: '河內',
   HAIPHONG: '海防',
-  'DANANG': '峴港',
+  DANANG: '峴港',
   'DA NANG': '峴港',
   'PORT KLANG': '巴生港',
   PENANG: '檳城',
@@ -92,7 +96,6 @@ const PORT_MAP: Record<string, string> = {
   YANGON: '仰光',
   RANGOON: '仰光',
   COLOMBO: '可倫坡',
-  'PORT LOUIS': '路易港',
 
   // India
   MUMBAI: '孟買',
@@ -118,10 +121,9 @@ const PORT_MAP: Record<string, string> = {
   'ABU DHABI': '阿布達比',
   SHARJAH: '沙迦',
   MUSCAT: '馬斯喀特',
-  'SALALAH': '薩拉拉',
+  SALALAH: '薩拉拉',
   DAMMAM: '達曼',
   JEDDAH: '吉達',
-  'UMMALQUWAIN': '烏姆蓋萬',
 
   // Australia / NZ
   SYDNEY: '雪梨',
@@ -143,7 +145,7 @@ const PORT_MAP: Record<string, string> = {
   SAVANNAH: '薩凡納',
   HOUSTON: '休士頓',
   'NEW ORLEANS': '紐奧良',
-  'SANTOS': '桑托斯',
+  SANTOS: '桑托斯',
   'BUENOS AIRES': '布宜諾斯艾利斯',
   VALPARAISO: '瓦爾帕萊索',
 
@@ -163,7 +165,7 @@ const PORT_MAP: Record<string, string> = {
   GDANSK: '格但斯克',
 
   // Africa
-  'DURBAN': '德班',
+  DURBAN: '德班',
   'CAPE TOWN': '開普敦',
   MOMBASA: '蒙巴薩',
   DAR: '三蘭港',
